@@ -27,7 +27,7 @@ const database = {
     { id: 6, name: "copper" }
   ],
 
-  miningFacilities: [
+  facilities: [
     { id: 1, name: "Ganymead", active: true },
     { id: 1, name: "Io", active: true },
     { id: 1, name: "Titan", active: true },
@@ -54,7 +54,7 @@ export const setFacility = (facilityId) => {
 };
 
 export const getFacilities = () => {
-  return database.facilities.map((f) => ({ ...f }));
+  return database.facilities.map((facility) => ({ ...facility }));
 };
 
 export const purchaseMineral = () => {

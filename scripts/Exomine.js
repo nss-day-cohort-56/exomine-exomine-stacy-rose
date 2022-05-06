@@ -1,3 +1,4 @@
+import { Facilities } from "./Facilities.js"
 import { Governors } from "./Governor.js"
 
 export const Exomine = () => {
@@ -5,8 +6,13 @@ export const Exomine = () => {
         <h1>Solar System Mining Marketplace</h1>
         ;
         <article class="choices">
-            <section class="governor_choices">
+            <section class="governorChoices">
                 
                 ${Governors()}
+            </section>
+            <article class="choices">
+            <section class="facilityChoices">
+                
+                ${Facilities()}
             </section>`
 };
