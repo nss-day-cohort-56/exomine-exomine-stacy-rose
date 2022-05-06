@@ -43,6 +43,11 @@ const database = {
   coloniesCart: []
 };
 
+
+export const getGovernors = () => {
+    return database.governors.map(governor => ({...governor}))
+}
+
 export const setFacility = (facilityId) => {
   database.transientState.selectedFacility = facilityId;
   document.dispatchEvent(new CustomEvent("stateChanged"));
