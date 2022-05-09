@@ -18,3 +18,13 @@ export const Facilities = () => {
         html += "</select>"
         return html
     }
+
+
+    document.addEventListener(
+        "change",
+        (event) => {
+            if (event.target.id === "facility") {
+                console.log("facility selected")
+            }
+        }
+    )   
