@@ -1,5 +1,6 @@
 import { Facilities } from "./Facilities.js"
 import { Governors } from "./Governor.js"
+import { Minerals } from "./Facilities.js"
 
 export const Exomine = () => {
   return `
@@ -14,5 +15,9 @@ export const Exomine = () => {
             <section class="facilityChoices">
                 
                 ${Facilities()}
+            </section>
+            <section class="facilityChoices">
+                
+               
             </section>`
 };
